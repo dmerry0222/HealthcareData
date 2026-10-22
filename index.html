@@ -1,0 +1,114 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Healthcare Outcomes Reference</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#15284B;--gold:#E7AB2A;--sky:#3CB4E5;--teal:#40C1AC;--body:#595959;--ink:#000;--bg:#fff;
+--rule:rgba(21,40,75,.14);--tint-02:rgba(21,40,75,.03);--tint-05:rgba(21,40,75,.05)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#EEF0F3}
+body{font-family:"Libre Franklin","Segoe UI",Helvetica,Arial,sans-serif;color:var(--body);line-height:1.6;text-wrap:pretty}
+.wrap{background:var(--bg);max-width:1180px;margin:0 auto;min-height:100vh;padding:34px 42px 90px}
+h1{font-size:1.625rem;font-weight:600;color:var(--ink);margin:0 0 7px;letter-spacing:-.015em;line-height:1.2;text-wrap:balance}
+.intro{font-size:.8438rem;margin:0 0 18px;max-width:74ch}
+.bar{position:sticky;top:0;background:var(--bg);padding:11px 0 10px;border-bottom:1px solid var(--rule);z-index:5;margin-bottom:14px}
+.tabs{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:9px}
+.tab{font:inherit;font-size:.8125rem;font-weight:600;color:var(--body);background:none;border:1px solid var(--rule);padding:7px 13px;cursor:pointer;transition:.18s ease}
+.tab[aria-selected="true"]{color:var(--navy);border-color:var(--navy);background:var(--tint-05)}
+.tab:focus-visible,.chip:focus-visible{outline:2px solid var(--navy);outline-offset:2px}
+.chips{display:flex;gap:4px;flex-wrap:wrap;margin-bottom:9px}
+.chip{font:inherit;font-size:.6875rem;font-weight:600;color:var(--body);background:none;border:1px solid var(--rule);padding:4px 9px;cursor:pointer;transition:.18s ease;white-space:nowrap}
+.chip[aria-pressed="true"]{color:#fff;background:var(--teal);border-color:var(--teal)}
+.chip .c{opacity:.75;font-weight:400;margin-left:4px}
+input[type=search]{font:inherit;font-size:.875rem;width:100%;max-width:430px;padding:8px 11px;border:1px solid var(--rule);background:var(--bg);color:var(--ink)}
+input[type=search]:focus{outline:2px solid var(--navy);outline-offset:2px}
+.count{font-size:.75rem;margin-top:7px}
+table{width:100%;border-collapse:collapse;font-size:.8125rem;margin:0 0 4px}
+th{text-align:left;font-size:.6875rem;font-weight:600;color:var(--navy);letter-spacing:.04em;background:var(--tint-02);padding:7px 9px;border-bottom:1px solid var(--rule)}
+td{padding:7px 9px;border-bottom:1px solid var(--rule);vertical-align:top;line-height:1.45}
+td.n{text-align:right;font-weight:600;color:var(--navy);white-space:nowrap}
+td.sm{font-size:.75rem}
+.nm{font-weight:600;color:var(--navy)}
+a{color:var(--navy);font-weight:600;text-decoration:underline;text-decoration-color:var(--teal);text-decoration-thickness:2px;text-underline-offset:3px}
+.no{display:inline-block;width:12px;height:12px;border:1.5px solid rgba(21,40,75,.3);border-radius:50%;position:relative;vertical-align:-1px}
+.no::after{content:"";position:absolute;left:-1.5px;top:4px;width:12px;height:1.5px;background:rgba(21,40,75,.3);transform:rotate(-45deg)}
+.pill{display:inline-block;font-size:.6875rem;font-weight:600;color:var(--navy);background:var(--tint-05);padding:2px 7px;margin:0 4px 3px 0;white-space:nowrap}
+.none{font-size:.875rem;padding:26px 0}
+@media (max-width:820px){.wrap{padding:24px 18px 70px}td.hide,th.hide{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<h1>Healthcare Outcomes Reference</h1>
+<p class="intro">Suffolk graduate placements at healthcare, behavioral health, or life science employers from First Destination data for the Classes of 2020 through 2025 and the 2026 exit survey.</p>
+
+<div class="bar">
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="true" data-v="all">All placements</button>
+    <button class="tab" role="tab" aria-selected="false" data-v="emp">By employer</button>
+    <button class="tab" role="tab" aria-selected="false" data-v="l134">Class of 2025 placements</button>
+    <button class="tab" role="tab" aria-selected="false" data-v="nc">Non-clinical roles '20&ndash;'26</button>
+  </div>
+  <div class="chips" id="chips"></div>
+  <input type="search" id="q" placeholder="Filter by employer, role, city, or program" aria-label="Filter">
+  <div class="count" id="count"></div>
+</div>
+<div id="out"></div>
+</div>
+
+<script>
+const SUBS=["Academic medical centers and hospital systems","Behavioral health, counseling, and human services","Biotech, pharmaceuticals, and life sciences","Specialty practices, dental, and outpatient","Community health centers and safety net","Health plans, payers, and insurance","Health IT, data, and digital health","Government, public health, and policy","Elder care, home care, and rehabilitation","Other healthcare and life science organizations"];
+const SHORT={"Academic medical centers and hospital systems":"Hospitals and academic medical centers","Behavioral health, counseling, and human services":"Behavioral health and human services","Biotech, pharmaceuticals, and life sciences":"Biotech and life sciences","Specialty practices, dental, and outpatient":"Specialty and outpatient","Community health centers and safety net":"Community health centers","Health plans, payers, and insurance":"Payers and insurance","Health IT, data, and digital health":"Health IT and digital health","Government, public health, and policy":"Government and public health","Elder care, home care, and rehabilitation":"Elder care and rehab","Other healthcare and life science organizations":"Other"};
+let D=null, view="all", picked=new Set();
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const hay=o=>[o.emp,o.title,o.major,o.city,o.st,o.coh,o.sub].join(" ").toLowerCase();
+const li=u=>u?`<a href="${esc(u)}" target="_blank" rel="noopener">LinkedIn</a>`:`<span class="no" role="img" aria-label="no profile on file"></span>`;
+const src=()=>view==="emp"?D.employers:view==="l134"?D.l134:view==="nc"?D.nonclin:D.all;
+
+function chips(){
+  const rows=src(); const n={}; for(const r of rows) n[r.sub]=(n[r.sub]||0)+1;
+  document.getElementById("chips").innerHTML=SUBS.filter(s=>n[s]).map(s=>
+    `<button class="chip" aria-pressed="${picked.has(s)}" data-s="${esc(s)}">${esc(SHORT[s]||s)}<span class="c">${n[s]}</span></button>`).join("");
+  document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{
+    const s=b.dataset.s; picked.has(s)?picked.delete(s):picked.add(s); chips(); render();
+  }));
+}
+function render(){
+  const q=document.getElementById("q").value.trim().toLowerCase();
+  const out=document.getElementById("out"), cnt=document.getElementById("count");
+  if(!D){out.innerHTML='<p class="none">Loading.</p>';return;}
+  const base=src();
+  const rows=base.filter(r=>(!picked.size||picked.has(r.sub))&&(!q||hay(r).includes(q)));
+  let h="";
+  if(view==="emp"){
+    h+=`<table><thead><tr><th>Employer</th><th style="text-align:right">Hires</th><th class="hide">City</th><th>Roles held by Suffolk graduates</th><th class="hide">Programs</th></tr></thead><tbody>`;
+    for(const e of rows) h+=`<tr><td class="nm">${esc(e.name)}</td><td class="n">${e.n}</td><td class="sm hide">${esc(e.city)}</td><td class="sm">${e.titles.map(esc).join(" · ")||"<span class='no'></span>"}</td><td class="sm hide">${e.majors.map(m=>`<span class="pill">${esc(m)}</span>`).join("")}</td></tr>`;
+    h+="</tbody></table>";
+    cnt.textContent=`${rows.length} of ${base.length} employers · ${rows.reduce((a,b)=>a+b.n,0)} known hires`;
+  } else {
+    const showClass = view!=="l134";
+    h+=`<table><thead><tr><th>Employer</th><th>Role</th><th>Program</th><th class="hide">City</th>${showClass?'<th class="hide">Class</th>':'<th class="hide">Category</th>'}<th>LinkedIn</th></tr></thead><tbody>`;
+    for(const r of rows) h+=`<tr><td class="nm">${esc(r.emp)}</td><td class="sm">${esc(r.title)||"<span class='no'></span>"}</td><td class="sm">${esc(r.major)}</td><td class="sm hide">${esc(r.city)}${r.st?", "+esc(r.st):""}</td><td class="sm hide">${esc(showClass?r.coh:r.ind)}</td><td class="sm">${li(r.li)}</td></tr>`;
+    h+="</tbody></table>";
+    cnt.textContent=`${rows.length} of ${base.length} placements`;
+  }
+  out.innerHTML=rows.length?h:'<p class="none">Nothing matches that filter.</p>';
+}
+document.querySelectorAll(".tab").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-selected","false"));
+  b.setAttribute("aria-selected","true"); view=b.dataset.v; chips(); render();
+}));
+document.getElementById("q").addEventListener("input",render);
+fetch("ref.json").then(r=>r.json()).then(j=>{D=j;chips();render();}).catch(()=>{document.getElementById("out").innerHTML='<p class="none">Could not load the data file.</p>';});
+render();
+</script>
+</body>
+</html>
+
+</body></html>

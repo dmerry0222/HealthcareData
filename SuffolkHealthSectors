@@ -1,0 +1,265 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eight Healthcare Sectors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#15284B;--gold:#E7AB2A;--sky:#3CB4E5;--teal:#40C1AC;--cc:#CE3062;
+--body:#2E2E2E;--mute:#4A4A4A;--ink:#000;--bg:#fff;
+--rule:rgba(21,40,75,.14);--tint-02:rgba(21,40,75,.03);--tint-05:rgba(21,40,75,.05)}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:#EEF0F3}
+body{font-family:"Libre Franklin","Segoe UI",Helvetica,Arial,sans-serif;color:var(--body);line-height:1.6;text-wrap:pretty}
+.wrap{background:var(--bg);max-width:1040px;margin:0 auto;padding:56px 56px 80px}
+h1{font-size:2.125rem;font-weight:600;color:var(--ink);margin:0 0 16px;letter-spacing:-.02em;line-height:1.14;text-wrap:balance}
+h2{font-size:1.3125rem;font-weight:600;color:var(--navy);margin:0 0 4px;line-height:1.22}
+.sector>h2{margin-bottom:3px}
+h3{font-size:.8125rem;font-weight:600;color:var(--navy);margin:0 0 5px;letter-spacing:.02em}
+p{margin:0 0 13px;font-size:.9375rem}
+.lede{font-size:1.0625rem;line-height:1.6;max-width:70ch}
+strong{font-weight:600;color:var(--navy)}
+ul{margin:0;padding-left:17px;font-size:.875rem}
+li{margin-bottom:5px}
+
+/* ---------- sector buttons ---------- */
+.btngrid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:34px 0 44px}
+.btn{display:flex;align-items:center;justify-content:center;text-align:center;
+  min-height:88px;padding:16px 14px;background:#fff;border:2px solid var(--c);
+  color:var(--navy);font:inherit;font-size:.875rem;font-weight:600;line-height:1.3;
+  text-decoration:none;cursor:pointer;transition:background .18s ease,color .18s ease}
+.btn:hover,.btn:focus-visible{background:var(--c);color:var(--fg,#fff)}
+.btn:focus-visible{outline:2px solid var(--navy);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+
+/* ---------- sectors ---------- */
+.sector{border:1px solid var(--rule);border-top:4px solid var(--navy);padding:24px 28px;margin-bottom:16px;scroll-margin-top:20px}
+.tagline{font-size:.9375rem;color:var(--mute);margin:0 0 16px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:0 32px}
+.blk{margin-bottom:14px}
+.blk p,.blk ul{font-size:.875rem;margin-bottom:0}
+.emp{font-size:.875rem;line-height:1.55}
+.roles{list-style:none;padding:0;margin:0;font-size:.8438rem;columns:2;column-gap:32px}
+.roles li{margin-bottom:6px;line-height:1.32;break-inside:avoid}
+.roles b{display:block;font-weight:600;color:var(--navy)}
+.roles span{color:var(--mute);font-size:.7813rem}
+.star{border:1px solid var(--rule);border-left:3px solid var(--cc);background:var(--tint-02);padding:13px 16px;margin-top:4px}
+.star p{margin:0;font-size:.875rem}
+.unique{background:var(--tint-05);border-left:3px solid var(--gold);padding:13px 16px;margin-top:4px}
+.unique p{margin:0;font-size:.875rem}
+
+@media (max-width:980px){
+  .wrap{padding:30px 20px 60px}
+  .btngrid{grid-template-columns:1fr 1fr;gap:9px}
+  .btn{min-height:72px;font-size:.8125rem}
+  .grid{grid-template-columns:1fr}.roles{columns:1}
+  h1{font-size:1.75rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<h1>Eight Healthcare Sectors Suffolk Can Name and Claim</h1>
+<p class="lede">Suffolk educates students for healthcare careers across all three schools, but we have never had a shared way to say so. Our descriptions tend to list a few familiar programs and then trail off into "and more." That phrasing costs us something every time we use it. It makes genuine breadth sound accidental, it gives faculty, advisors, and employer partners no common vocabulary, and it leaves students in business, law, policy, and analytics with no reason to believe healthcare is a field open to them.</p>
+<p class="lede">These eight sectors come from where Suffolk graduates actually work. Four describe types of organizations and four describe types of work that cut across them, because a radiation dosimetrist and a hospital finance analyst may share an employer without sharing a career. Named together, they turn a long list of programs into a map that a student can navigate, an employer can locate themselves on, and the University can stand behind.</p>
+
+<div class="btngrid">
+  <a class="btn" href="#s1" style="--c:#15284B;--fg:#fff">Hospital and Health System Leadership</a>
+  <a class="btn" href="#s2" style="--c:#3CB4E5;--fg:#15284B">Behavioral and Mental Health</a>
+  <a class="btn" href="#s3" style="--c:#40C1AC;--fg:#15284B">Radiation Oncology and Medical Imaging</a>
+  <a class="btn" href="#s4" style="--c:#E7AB2A;--fg:#15284B">Life Sciences and Biotech</a>
+  <a class="btn" href="#s5" style="--c:#CE3062;--fg:#fff">Public Health, Policy, and Community Care</a>
+  <a class="btn" href="#s6" style="--c:#15284B;--fg:#fff">Health Law and Compliance</a>
+  <a class="btn" href="#s7" style="--c:#3CB4E5;--fg:#15284B">Digital Health and Analytics</a>
+  <a class="btn" href="#s8" style="--c:#40C1AC;--fg:#15284B">Healthcare Finance and Revenue</a>
+</div>
+
+<!-- ============== 1 ============== -->
+<div class="sector" id="s1" style="border-top-color:#15284B">
+  <h2>Hospital and Health System Leadership</h2>
+  <p class="tagline">Running the institutions: operations, administration, program management, and department leadership.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs</h3>
+      <ul><li>Healthcare Administration, MHA</li><li>Healthcare Administration, three-year applied BS</li><li>Business Administration, MBA and Executive MBA</li><li>Business Analytics, MSBA</li><li>Biology, Psychology, Sociology at the entry level</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">Massachusetts General Hospital &middot; Brigham and Women's Hospital &middot; Beth Israel Lahey Health &middot; Dana-Farber Cancer Institute &middot; Boston Children's Hospital &middot; Mass General Brigham &middot; Boston Medical Center &middot; Tufts Medicine &middot; Newton-Wellesley Hospital &middot; Cambridge Health Alliance &middot; Mass Eye and Ear &middot; Spaulding Rehabilitation</p></div>
+  </div>
+  <div class="blk"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>Senior Research Project Manager</b><span>Dana-Farber Cancer Institute &middot; MHA</span></li>
+      <li><b>Administrative Program Manager</b><span>Massachusetts General Hospital &middot; MBA</span></li>
+      <li><b>Ambulatory Clinic Supervisor</b><span>Boston Children's Hospital &middot; MHA</span></li>
+      <li><b>Operations Manager</b><span>Boston Medical Center &middot; MHA</span></li>
+      <li><b>Senior Project Coordinator</b><span>Mass General Brigham &middot; MBA</span></li>
+      <li><b>Lead Practice and OR Operations</b><span>Brigham and Women's Hospital &middot; MHA</span></li>
+      <li><b>Department Coordinator</b><span>Newton-Wellesley Hospital &middot; MHA</span></li>
+      <li><b>Practice Manager</b><span>Wellesley Dermatology Care &middot; MBA</span></li>
+    </ul></div>
+  <div class="star"><p><strong>Chimwemwe Clarke</strong>, MHA, is Nursing Director at Massachusetts General Hospital. <strong>Anu Gupte</strong>, MHA '17, is Program Director in the Innovator Growth Division at Mass General Brigham Innovation. Both return to campus to speak with students.</p></div>
+</div>
+
+<!-- ============== 2 ============== -->
+<div class="sector" id="s2" style="border-top-color:#3CB4E5">
+  <h2>Behavioral and Mental Health</h2>
+  <p class="tagline">Treatment, counseling, and the agencies that deliver behavioral health care across the Commonwealth.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs</h3>
+      <ul><li>Mental Health Counseling, MS</li><li>Clinical Psychology, PhD</li><li>Applied Developmental Psychology, PhD</li><li>Psychology, BA and BS</li><li>Crime and Justice Studies</li><li>Public Administration, MPA, for agency leadership</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">McLean Hospital &middot; Beth Israel Lahey Health &middot; Eliot Community Human Services &middot; Transformations Care Network &middot; New England Center for OCD and Anxiety &middot; Arbour Counseling Services &middot; Cambridge Eating Disorder Center &middot; Riverside Community Care &middot; Bournewood Health Systems &middot; LifeStance Health &middot; North Suffolk Community Services &middot; Spectrum Health Systems</p></div>
+  </div>
+  <div class="blk"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>Senior Program Director</b><span>Beth Israel Lahey Health &middot; MS Mental Health Counseling</span></li>
+      <li><b>Clinical Coordinator</b><span>North Suffolk Community Services &middot; MS Mental Health Counseling</span></li>
+      <li><b>Juvenile Justice Advocate</b><span>Eliot Community Human Services &middot; Criminal Justice</span></li>
+      <li><b>Veteran Outreach Program Manager</b><span>Home Base &middot; Management</span></li>
+      <li><b>Project Manager</b><span>McLean Hospital &middot; MBA</span></li>
+      <li><b>Advanced Doctoral Intern</b><span>Eliot Community Human Services &middot; Applied Developmental Psychology PhD</span></li>
+    </ul></div>
+  <div class="star"><p><strong>Vanessa Spero</strong>, BS Psychology '17 and MA Mental Health Counseling and Criminal Justice '19, is a licensed Co-Response Clinician with the Malden Police Department and Eliot Community Human Services, a role that pairs behavioral health expertise with public safety.</p></div>
+</div>
+
+<!-- ============== 3 ============== -->
+<div class="sector" id="s3" style="border-top-color:#40C1AC">
+  <h2>Radiation Oncology and Medical Imaging</h2>
+  <p class="tagline">Planning and delivering radiation treatment, and the imaging that guides it.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs</h3>
+      <ul><li>Medical Dosimetry, MS</li><li>Radiation Therapy, BS</li><li>Radiation Science, BS</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">Massachusetts General Hospital &middot; Brigham and Women's Hospital &middot; Beth Israel Lahey Health &middot; Dana-Farber Cancer Institute &middot; Memorial Sloan Kettering Cancer Center &middot; City of Hope &middot; Penn Medicine &middot; Yale New Haven Health &middot; UC San Diego Health &middot; University of Vermont Health Network &middot; Cooper University Health Care &middot; University of Arkansas for Medical Sciences</p></div>
+  </div>
+  <div class="unique"><p><strong>Suffolk's most distinctive claim in healthcare.</strong> Medical dosimetry is offered by only a handful of universities nationally. Suffolk graduates hold credentialed positions at NCI-designated cancer centers from Boston to San Diego, and the credential travels anywhere in the country.</p></div>
+  <div class="blk" style="margin-top:14px"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>Certified Medical Dosimetrist</b><span>Brigham and Women's Hospital</span></li>
+      <li><b>Medical Dosimetrist</b><span>Memorial Sloan Kettering Cancer Center</span></li>
+      <li><b>Radiation Therapist</b><span>Massachusetts General Hospital</span></li>
+      <li><b>Medical Radiation Dosimetrist</b><span>University of Illinois Chicago Health</span></li>
+      <li><b>Registered MRI Technologist</b><span>Tufts Medical Center</span></li>
+      <li><b>Radiology Assistant</b><span>Mass General Brigham &middot; Biology</span></li>
+    </ul></div>
+  <div class="star"><p><strong>Jennifer Nguyen</strong>, MS Medical Dosimetry '22, is a Certified Medical Dosimetrist at Beth Israel Deaconess Medical Center.</p></div>
+</div>
+
+<!-- ============== 4 ============== -->
+<div class="sector" id="s4" style="border-top-color:#E7AB2A">
+  <h2>Life Sciences and Biotech</h2>
+  <p class="tagline">Research institutes, pharmaceutical and biotech companies, and the medical device industry.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs and pathways</h3>
+      <ul><li>Biology and Biotechnology, BS</li><li>Biochemistry, BS</li><li>Chemistry, BS</li><li>MBA and MSBA for commercial and operations roles</li><li>Biotech Ready, the LabCentral partnership</li><li>MGH Institute of Health Professions research internship</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">Broad Institute of MIT and Harvard &middot; Vertex Pharmaceuticals &middot; Takeda &middot; Biogen &middot; Bristol Myers Squibb &middot; GlaxoSmithKline &middot; Alnylam Pharmaceuticals &middot; Foundation Medicine &middot; Charles River Laboratories &middot; Boston Scientific &middot; ZOLL Medical &middot; Insulet &middot; Abbott &middot; Ginkgo Bioworks &middot; Cerevel Therapeutics</p></div>
+  </div>
+  <div class="blk"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>Associate Director, External Manufacturing</b><span>Vertex Pharmaceuticals &middot; Executive MBA</span></li>
+      <li><b>Sales Executive of Strategic Accounts</b><span>ZOLL Medical &middot; MBA</span></li>
+      <li><b>Process Development Associate</b><span>Broad Institute of MIT and Harvard &middot; Biology</span></li>
+      <li><b>Digital Marketing Coordinator</b><span>Boston Scientific &middot; MS Marketing</span></li>
+      <li><b>Manufacturing Associate</b><span>Bristol Myers Squibb &middot; Biology</span></li>
+      <li><b>Research Associate</b><span>Repertoire Immune Medicines</span></li>
+    </ul></div>
+  <div class="unique"><p>Nearly a third of Suffolk's recent biology graduates work in biotech, in a region with more than 1,000 biotech companies.</p></div>
+</div>
+
+<!-- ============== 5 ============== -->
+<div class="sector" id="s5" style="border-top-color:#CE3062">
+  <h2>Public Health, Policy, and Community Care</h2>
+  <p class="tagline">Population health, the agencies that govern it, and the community organizations that deliver access.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs</h3>
+      <ul><li>Public Administration, MPA</li><li>Moakley Center graduate certificates</li><li>Global Public Policy, MA</li><li>Political Science and Sociology, BA and BS</li><li>Ethics and Public Policy</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">MassHealth and Massachusetts EOHHS &middot; Massachusetts Department of Public Health &middot; Boston Public Health Commission &middot; NeighborHealth &middot; Partners in Health &middot; VA Boston Healthcare System &middot; US Department of Health and Human Services &middot; Massachusetts League of Community Health Centers &middot; Fenway Health &middot; Lynn Community Health Center &middot; Central Boston Elder Services</p></div>
+  </div>
+  <div class="blk"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>Public Policy and Program Integrity Manager</b><span>MassHealth, Massachusetts EOHHS &middot; BS Psychology</span></li>
+      <li><b>Communications Coordinator</b><span>Massachusetts Department of Public Health &middot; BA Journalism</span></li>
+      <li><b>Development Associate</b><span>NeighborHealth &middot; Global Business</span></li>
+      <li><b>Communications Coordinator</b><span>Massachusetts League of Community Health Centers</span></li>
+      <li><b>Case Investigator and Unit Lead</b><span>Partners in Health</span></li>
+      <li><b>Public Affairs Officer</b><span>US Department of Health and Human Services</span></li>
+    </ul></div>
+  <div class="star"><p><strong>Carlos David Mendez</strong>, BS Psychology '22, is Public Policy and Program Integrity Manager at MassHealth within the Massachusetts Executive Office of Health and Human Services.</p></div>
+</div>
+
+<!-- ============== 6 ============== -->
+<div class="sector" id="s6" style="border-top-color:#15284B">
+  <h2>Health Law and Compliance</h2>
+  <p class="tagline">Regulation, compliance, contracts, and health law practice across providers, payers, and industry.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs</h3>
+      <ul><li>Suffolk Law School health and biomedical law concentration</li><li>Law School clinical programs and PILOT placements</li><li>Applied Politics, MA</li><li>Ethics and Public Policy</li><li>Political Science, BA</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">Blue Cross Blue Shield of Massachusetts &middot; Mass General Brigham Health Plan &middot; Harvard Medical School &middot; Health Law Advocates &middot; Fresenius Medical Care &middot; Haemonetics &middot; Committee for Public Counsel Services &middot; Network for Public Health Law</p></div>
+  </div>
+  <div class="blk"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>Senior Compliance Communications Consultant</b><span>Blue Cross Blue Shield of Massachusetts</span></li>
+      <li><b>Regulatory Affairs Operations Coordinator</b><span>Harvard Medical School &middot; Law</span></li>
+      <li><b>Paralegal</b><span>Mass General Brigham Health Plan &middot; Law</span></li>
+      <li><b>Contract Specialist</b><span>Haemonetics &middot; MA Applied Politics</span></li>
+      <li><b>Human Resources Compliance Specialist</b><span>Harvard Medical School</span></li>
+      <li><b>Corporate Paralegal</b><span>Fresenius Medical Care</span></li>
+    </ul></div>
+  <div class="unique"><p>Suffolk is one of the few universities where a law school with a dedicated health law concentration sits alongside a CAHME-accredited MHA and an MPA serving state health agencies. Compliance is where those three meet.</p></div>
+</div>
+
+<!-- ============== 7 ============== -->
+<div class="sector" id="s7" style="border-top-color:#3CB4E5">
+  <h2>Digital Health and Analytics</h2>
+  <p class="tagline">Making sense of health data and building the systems that create it.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs</h3>
+      <ul><li>Business Analytics, MSBA</li><li>Business Analytics and Information Systems, BSBA</li><li>Information Systems</li><li>Computer Science, BS</li><li>MHA, on the health informatics side</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">MEDITECH &middot; Boston Children's Hospital &middot; Mass General Brigham &middot; Massachusetts General Hospital &middot; Vertex Pharmaceuticals &middot; Biogen &middot; Blue Cross Blue Shield of Massachusetts &middot; Simplify Clinical Analytics &middot; LogixHealth &middot; Keva Health &middot; Laza Medical &middot; Cornerstone Health Solutions</p></div>
+  </div>
+  <div class="blk"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>IT Epic Analyst II</b><span>Boston Children's Hospital &middot; MHA</span></li>
+      <li><b>Business Analyst and Project Manager</b><span>Vertex Pharmaceuticals &middot; MSBA</span></li>
+      <li><b>Technical Support Specialist</b><span>MEDITECH &middot; BSBA Business Analytics and Information Systems</span></li>
+      <li><b>Pharmacy Analyst</b><span>Blue Cross Blue Shield of Massachusetts</span></li>
+      <li><b>Software Engineer</b><span>Laza Medical &middot; Information Systems</span></li>
+      <li><b>Communication and Digital Content Strategist</b><span>Massachusetts General Hospital</span></li>
+    </ul></div>
+  <div class="unique"><p>MEDITECH, one of the largest electronic health record companies in the country, is headquartered in Massachusetts and is an active Suffolk career community partner.</p></div>
+</div>
+
+<!-- ============== 8 ============== -->
+<div class="sector" id="s8" style="border-top-color:#40C1AC">
+  <h2>Healthcare Finance and Revenue</h2>
+  <p class="tagline">The business of care: financial analysis, payer operations, claims, and revenue strategy.</p>
+  <div class="grid">
+    <div class="blk"><h3>Programs</h3>
+      <ul><li>Business Administration, MBA and Executive MBA</li><li>Finance, MSF</li><li>Accounting, MSA</li><li>Finance and Management, BSBA</li><li>Business Analytics, MSBA</li></ul></div>
+    <div class="blk"><h3>Where graduates work</h3>
+      <p class="emp">Massachusetts General Hospital &middot; Brigham and Women's Hospital &middot; Commonwealth Care Alliance &middot; Harvard Medical Faculty Physicians &middot; Point32Health &middot; Blue Cross Blue Shield of Massachusetts &middot; Health Plans, Inc. &middot; Delta Dental &middot; Brown University Health &middot; United Therapeutics &middot; Straumann Group &middot; South Boston Community Health Center</p></div>
+  </div>
+  <div class="blk"><h3>Roles Suffolk graduates hold</h3>
+    <ul class="roles">
+      <li><b>Director, Claims Operations</b><span>Commonwealth Care Alliance &middot; Executive MBA</span></li>
+      <li><b>Financial Analyst</b><span>Massachusetts General Hospital &middot; MBA</span></li>
+      <li><b>Revenue Analyst</b><span>Harvard Medical Faculty Physicians &middot; MBA</span></li>
+      <li><b>Senior Corporate Accountant</b><span>United Therapeutics &middot; MS Finance</span></li>
+      <li><b>Vice President, Integration Partnerships</b><span>Point32Health &middot; Executive MBA</span></li>
+      <li><b>Assistant Controller</b><span>WellQuest Living &middot; MS Accounting</span></li>
+    </ul></div>
+  <div class="unique"><p>Suffolk's business school sends graduates into healthcare finance at every level, from analyst to vice president, at the region's largest providers and payers.</p></div>
+</div>
+
+</div>
+</body>
+</html>
+
+</body></html>
